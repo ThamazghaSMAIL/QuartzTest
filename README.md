@@ -13,10 +13,13 @@ Lancer plusieurs jobs qui se partagent les taches
 Il suffit de rajouter les lignes suivantes dans le fichier des properties : 
 
 **org.quartz.scheduler.instanceName: SchedulerName**
+
 **org.quartz.scheduler.instanceId: InstanceName**
 
 **org.quartz.jobStore.dontSetAutoCommitFalse: false**
+
 **org.quartz.jobStore.acquireTriggersWithinLock: true**
+
 **org.quartz.jobStore.isClustered: true**
 
 Ça permet de spécifier un nom d’instance et un id d’instance à Quartz ainsi qu’un lock lors de l’exécution d’un trigger (pour éviter que deux instances essayent de lancer le même job)
