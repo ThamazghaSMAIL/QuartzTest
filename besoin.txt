@@ -1,0 +1,10 @@
+Premiere solution : 
+Quand un job s'arrête à cause d'une erreur ou autre, lancer un autre job avec les mêmes taches 
+Je pense que ce n'est pas possible parce que : 
+	- il est déconseillé de modifier directement les données en base. 
+	- La librairie n’effectuant une analyse qu’au lancement de l’application, 
+	elle ne tiendra alors pas compte des modification de la base et continuera
+	à fonctionner avec les anciennes valeurs.
+	
+Deuxième solution : 
+Lancer plusieurs jobs qui se partagent les taches
