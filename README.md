@@ -1,5 +1,8 @@
 # QuartzTest
 
+N.B. : Avant de lancer l'application, créer une base de données qui s'appelle "quartz" et exécuter le script qu'il y à dans script_sql.sql
+
+
 ## Premiere solution : 
 Quand un job s'arrête à cause d'une erreur ou autre, lancer un autre job avec les mêmes taches 
 Je pense que ce n'est pas possible parce que : 
