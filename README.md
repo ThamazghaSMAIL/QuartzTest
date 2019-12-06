@@ -10,6 +10,7 @@ Je pense que ce n'est pas possible parce que :
 	
 ## Deuxième solution : 
 Lancer plusieurs jobs qui se partagent les taches
+
 Il suffit de rajouter les lignes suivantes dans le fichier des properties : 
 
 **org.quartz.scheduler.instanceName: SchedulerName**
